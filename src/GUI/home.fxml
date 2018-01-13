@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1108.0" prefWidth="1381.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.HomeController">
+   <children>
+      <ImageView fx:id="image" fitHeight="1108.0" fitWidth="1381.0" opacity="0.3" pickOnBounds="true">
+         <image>
+            <Image url="@../image/casino.jpg" />
+         </image>
+      </ImageView>
+      <JFXDrawer fx:id="drawer" layoutX="14.0" layoutY="68.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseEntered="#showDrawer" prefHeight="1108.0" prefWidth="208.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1173.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="dynamicPane" layoutX="200.0" layoutY="34.0" prefHeight="866.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="34.0">
+         <children>
+            <AnchorPane fx:id="repPane" layoutX="14.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1004.0" prefWidth="1181.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="63.0">
+               <children>
+                  <ImageView fx:id="im" fitHeight="1004.0" fitWidth="1188.0" layoutX="-5.0" opacity="0.23" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/casino.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="316.0" fitWidth="291.0" layoutX="574.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/casinoLogo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <Label fx:id="label" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="260.0" textFill="#43487c">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXToolbar fx:id="toolbar" prefHeight="27.0" prefWidth="1381.0" stylesheets="@../resources/css/toolbar.css" />
+   </children>
+</AnchorPane>

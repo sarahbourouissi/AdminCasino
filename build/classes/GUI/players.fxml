@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PlayersController">
+   <children>
+      <ImageView fx:id="image" fitHeight="1000.0" fitWidth="1181.0" opacity="0.14" pickOnBounds="true">
+         <image>
+            <Image url="@../image/background.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableview" layoutX="66.0" layoutY="39.0" prefHeight="482.0" prefWidth="658.0" stylesheets="@../resources/css/jfoenix-components.css">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="181.0" text="ID" />
+            <TableColumn fx:id="name" prefWidth="153.0" text="Name" />
+            <TableColumn fx:id="email" prefWidth="141.0" text="E_mail" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

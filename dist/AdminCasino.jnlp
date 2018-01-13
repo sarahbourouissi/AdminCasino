@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AdminCasino.jnlp">
+  <information>
+    <title>AdminCasino</title>
+    <vendor>user</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AdminCasino.jar" size="9742106" download="eager" />
+    <jar href="lib\TrayNotification.jar" size="41019" download="eager" />
+    <jar href="lib\UndecoratorBis.jar" size="121176" download="eager" />
+    <jar href="lib\backendless.jar" size="969752" download="eager" />
+    <jar href="lib\core-8.0b8.jar" size="37940" download="eager" />
+    <jar href="lib\datafx-8.0b8.jar" size="261" download="eager" />
+    <jar href="lib\flow-8.0b8.jar" size="63203" download="eager" />
+    <jar href="lib\fontawesomefx-8.0.10.jar" size="108930" download="eager" />
+    <jar href="lib\javassist.jar" size="710746" download="eager" />
+    <jar href="lib\javax.inject.jar" size="2497" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2323355" download="eager" />
+    <jar href="lib\json-simple-1.1.1.jar" size="23737" download="eager" />
+    <jar href="lib\retrolambda-2.0.6.jar" size="224768" download="eager" />
+    <jar href="lib\servlet-api-2.5.jar" size="105112" download="eager" />
+    <jar href="lib\tilesfx-1.4.2.jar" size="664922" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AdminCasino" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="admincasino.admincasino1"  name="AdminCasino" />
+  <update check="always"/>
+</jnlp>

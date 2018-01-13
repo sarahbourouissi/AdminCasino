@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1181.0" stylesheets="@../resources/css/jfoenix-components.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.StatisticsController">
+   <children>
+      <ImageView fx:id="image" fitHeight="1000.0" fitWidth="1181.0" layoutX="20.0" layoutY="20.0" opacity="0.14" pickOnBounds="true">
+         <image>
+            <Image url="@../image/background.jpg" />
+         </image>
+      </ImageView>
+      <StackPane fx:id="root" layoutX="267.0" layoutY="191.0" prefHeight="259.0" prefWidth="491.0" />
+      <TableView fx:id="tableview" layoutX="231.0" layoutY="155.0" prefHeight="696.0" prefWidth="730.0" stylesheets="@../resources/css/jfoenix-components.css">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="181.0" text="ID" />
+            <TableColumn fx:id="name" prefWidth="184.0" text="Name" />
+            <TableColumn fx:id="email" prefWidth="178.0" text="E_mail" />
+            <TableColumn fx:id="confirmation" prefWidth="186.0" text="Confirmation" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

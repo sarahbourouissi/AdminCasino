@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1000.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GamesController">
+   <children>
+      <ImageView fx:id="image" fitHeight="1000.0" fitWidth="1181.0" opacity="0.14" pickOnBounds="true">
+         <image>
+            <Image url="@../image/background.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <TableView fx:id="ctableview" layoutX="31.0" layoutY="66.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="612.0" prefWidth="510.0" stylesheets="@../resources/css/jfoenix-components.css">
+        <columns>
+          <TableColumn fx:id="cgame" prefWidth="147.0" text="game" />
+          <TableColumn fx:id="cdatedebut" prefWidth="123.00003051757812" text="Date Debut" />
+            <TableColumn fx:id="cdatefin" prefWidth="157.0" text="Date Fin" />
+        </columns>
+      </TableView>
+      <Separator layoutX="564.0" layoutY="57.0" orientation="VERTICAL" prefHeight="686.0" prefWidth="53.0" />
+      <Pane layoutX="684.0" layoutY="66.0" prefHeight="597.0" prefWidth="462.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <PieChart fx:id="piechart" layoutX="13.0" layoutY="7.0" prefHeight="523.0" prefWidth="437.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="1000.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainController">
+   <children>
+      <StackPane fx:id="stack" prefHeight="88.0" prefWidth="1181.0" />
+      <AnchorPane fx:id="tiles" layoutX="1.0" layoutY="100.0" prefHeight="866.0" prefWidth="1170.0" />
+   </children>
+</AnchorPane>
